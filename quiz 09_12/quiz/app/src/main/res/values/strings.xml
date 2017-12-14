@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">quiz</string>
+    <integer name="com_vk_sdk_AppId">6262715</integer>
+
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+</resources>

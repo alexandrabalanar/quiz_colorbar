@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_highest_score"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="16dp"
+
+    tools:context="com.example.alexandra.quiz.HighestScoreActivity">
+
+
+    <TextView
+        android:id="@+id/textScore"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/white"
+        android:text="Your score:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/textHighScore"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@+id/falseScore"
+        android:layout_alignStart="@+id/falseScore"
+        android:layout_below="@+id/falseScore"
+        android:background="@android:color/white"
+        android:text="Highest score:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/falseScore"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textScore"
+        android:layout_alignStart="@+id/textScore"
+        android:layout_below="@+id/textScore"
+        android:background="@android:color/white"
+        android:text="False answer:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <ImageButton
+        android:id="@+id/tryagain"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/textHighScore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:background="@android:color/background_light"
+        android:onClick="onRepeatClick"
+        app:srcCompat="@drawable/tryagain" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/ShareButton"
+        android:layout_alignBottom="@+id/ShareButton"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/ShareButton"
+        android:layout_toRightOf="@+id/ShareButton"
+        android:background="@color/colorPrimary"
+        android:text="home" />
+
+    <Button
+        android:id="@+id/ShareButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+
+        android:layout_below="@+id/tryagain"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorPrimary"
+        android:text="Shared in VK" />
+
+
+</RelativeLayout>
